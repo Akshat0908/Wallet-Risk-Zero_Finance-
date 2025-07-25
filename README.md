@@ -4,7 +4,7 @@ A comprehensive risk assessment system for analyzing wallet addresses that inter
 
 ## Features
 
-- **Multi-API Data Collection**: Uses Etherscan, Alchemy, and The Graph APIs
+- **Multi-API Data Collection**: Uses Etherscan, Alchemy APIs
 - **Comprehensive Feature Extraction**: 7 key risk indicators
 - **Weighted Risk Scoring**: Sophisticated algorithm with configurable weights
 - **Scalable Architecture**: Modular design for processing large wallet lists
@@ -63,7 +63,7 @@ The system fetches transaction data from Compound V2 and V3 protocols using:
 
 - **Etherscan API**: Event logs for supply, borrow, repay, withdraw, and liquidation events
 - **Alchemy API**: Asset transfer data for comprehensive transaction history
-- **The Graph**: Subgraph queries for protocol-specific data
+
 
 ### Feature Extraction
 
@@ -124,9 +124,6 @@ Edit `config.py` to customize:
 - Free tier: 10 requests/second
 - Used for comprehensive transaction data
 
-### The Graph API
-- Free tier available
-- Used for protocol-specific queries
 
 ## Scalability Considerations
 
@@ -180,12 +177,6 @@ wallet_id,score
 - **Input Validation**: Ethereum address format validation
 - **Rate Limiting**: Respects API constraints to avoid abuse
 
-### ⚠️ Important Security Notes
-
-1. **Never commit your `.env` file** - it's already in `.gitignore`
-2. **Keep your API keys private** - don't share them publicly
-3. **Use environment variables** - never hardcode API keys in code
-4. **Rotate keys regularly** - for production use, rotate API keys periodically
 
 ## License
 
